@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var d=JSON.parse(localStorage.getItem("ijkl"))
+        // var im=document.createElement("img")
+        for(i=0;i<d.length;i++){
+        var e=document.createElement("div")
+        document.body.appendChild(e)
+        e.style.width="300px"
+        e.style.height="400px"
+        e.style.border="2px solid black"
+        e.style.display="inline-block"
+        e.style.marginRight="4px"
+        var im=document.createElement("img")
+
+        im.setAttribute("src",d[i])
+        im.style.height="400px"
+        im.style.width="300px"
+        e.appendChild(im)
+        }
+    </script>
+</body>
+</html>
